@@ -4,6 +4,8 @@ import Col from "./Components/Col";
 import SearchForm from "./Components/SearchForm";
 import ResultsList from "./Components/ResultsList";
 import Axios from "axios";
+import AboutMe from "./pages/aboutMe";
+import Portfolio from "./pages/portfolio";
 
 
 class App extends Component {
