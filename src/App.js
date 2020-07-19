@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import AboutMe from "./pages/aboutMe";
 import Portfolio from "./pages/portfolio";
