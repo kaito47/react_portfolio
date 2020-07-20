@@ -5,13 +5,14 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import GitHubIcon from '@material-ui/icons/GitHub';
-// import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import Header from '../aboutMe/Header';
 import MainFeaturedPost from '../aboutMe/MainFeaturedPost';
 import FeaturedPost from '../aboutMe/FeaturedPost';
-import Sidebar from '../aboutMe/Sidebar';
+// import Sidebar from '../aboutMe/Sidebar';
 import Footer from '../aboutMe/Footer';
+import Link from '@material-ui/core/Link';
+import Button from '@material-ui/core/Button';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -25,7 +26,7 @@ const sections = [
 ];
 
 const mainFeaturedPost = {
-    title: 'Hi, my name is Kait',
+    title: "Hi, I'm Kait",
     description:
         "",
     image:
@@ -36,33 +37,25 @@ const mainFeaturedPost = {
 
 const featuredPosts = [
     {
-        title: 'A bit about me:',
         description:
             "I'm a junior front end developer, currently employed as a Clinicial Specialist in the Deep Brain Stimulation Division for Medtronic, Inc.",
-        image: '../public/profilepic.jpg',
+        image: '../../../profilepic.jpg',
         imageText: 'Profile Pic of Kait',
     },
     {
-        title: 'Contact',
         description:
-            'This is a wider card with supporting text below as a natural lead-in to additional content.',
+            "I live in Philadelphia with my dog Remi and cat Phil. I enjoy playing bass guitar, listening to music, dancing, and going on outdoor adventures!",
         image: 'https://www.nanalyze.com/app/uploads/2017/01/Brain-Computer-Interface-Teaser.jpg',
         imageText: 'Image Text',
-        social: [
-            { name: 'GitHub', icon: GitHubIcon },
-            { name: 'Twitter', icon: TwitterIcon },
-        ],
+
     },
 ];
 
-// const posts = [post1, post2, post3];
+// const social = [
+//     { name: 'GitHub', icon: GitHubIcon },
+//     { name: 'Twitter', icon: TwitterIcon },
+// ];
 
-const sidebar = {
-    social: [
-        { name: 'GitHub', icon: GitHubIcon },
-        { name: 'Twitter', icon: TwitterIcon },
-    ],
-};
 
 export default function Blog() {
     const classes = useStyles();
@@ -76,21 +69,23 @@ export default function Blog() {
                     <MainFeaturedPost post={mainFeaturedPost} />
                     <Grid container spacing={4}>
                         {featuredPosts.map((post) => (
-                            <FeaturedPost key={post.title} post={post} social={sidebar.social} />
+                            <FeaturedPost key={post.title} post={post} />
                         ))}
+                        <Button variant="contained" color="secondary" href="https://github.com/kaito47" target="_blank" align="center">
+                            Click for Github
+</Button>
+                        <Button variant="contained" color="primary" href="https://www.linkedin.com/in/kait-o-shaughnessy-b9b3871a6/" target="_blank">
+                            Click for LinkedIn
+</Button>
+                        <Button variant="contained" color="secondary">Email: oshaughnessykm@gmail.com</Button>
+                        <Button variant="contained" color="primary" href="../../public/2020CV.pdf" target="_blank">
+                            Click for Resume
+                        </Button>
+
                     </Grid>
-                    {/* <Grid container spacing={5} className={classes.mainGrid}>
-                        <Main title="From the firehose" posts={posts} />
-                        <Sidebar
-                            title={sidebar.title}
-                            description={sidebar.description}
-                            archives={sidebar.archives}
-                            social={sidebar.social}
-                        />
-                    </Grid> */}
                 </main>
-            </Container>
+            </Container >
             <Footer title="Footer" description="Thanks for stopping by!" />
-        </React.Fragment>
+        </React.Fragment >
     );
 }
