@@ -12,3 +12,7 @@ code {
 ul {
   list-style: none;
 }
+
+#buttons {
+  margin-left: 50%;
+}

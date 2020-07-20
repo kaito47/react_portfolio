@@ -71,17 +71,18 @@ export default function Blog() {
                         {featuredPosts.map((post) => (
                             <FeaturedPost key={post.title} post={post} />
                         ))}
-                        <Button variant="contained" color="secondary" href="https://github.com/kaito47" target="_blank" align="center">
-                            Click for Github
+                        <div className="buttons">
+                            <Button variant="contained" color="secondary" href="https://github.com/kaito47" target="_blank" justify="center">
+                                Click for Github
 </Button>
-                        <Button variant="contained" color="primary" href="https://www.linkedin.com/in/kait-o-shaughnessy-b9b3871a6/" target="_blank">
-                            Click for LinkedIn
+                            <Button variant="contained" color="primary" href="https://www.linkedin.com/in/kait-o-shaughnessy-b9b3871a6/" target="_blank">
+                                Click for LinkedIn
 </Button>
-                        <Button variant="contained" color="secondary">Email: oshaughnessykm@gmail.com</Button>
-                        <Button variant="contained" color="primary" href="../../public/2020CV.pdf" target="_blank">
-                            Click for Resume
+                            <Button variant="contained" color="secondary">Email: oshaughnessykm@gmail.com</Button>
+                            <Button variant="contained" color="primary" href="../../public/2020CV.pdf" target="_blank">
+                                Click for Resume
                         </Button>
-
+                        </div>
                     </Grid>
                 </main>
             </Container >

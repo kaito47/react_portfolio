@@ -19,7 +19,7 @@ function Copyright() {
         <Typography variant="body2" color="textSecondary" align="center">
             {'Copyright © '}
             <Link color="inherit" href="https://material-ui.com/">
-                Your Website
+                Kaito
       </Link>{' '}
             {new Date().getFullYear()}
             {'.'}
@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const cards = [1, 2, 3, 4, 5, 6];
 
 export default function Album() {
     const classes = useStyles();
@@ -67,36 +67,29 @@ export default function Album() {
     return (
         <React.Fragment>
             <CssBaseline />
-            <AppBar position="relative">
+            {/* <AppBar position="relative">
                 <Toolbar>
                     <CameraIcon className={classes.icon} />
                     <Typography variant="h6" color="inherit" noWrap>
                         Album layout
           </Typography>
                 </Toolbar>
-            </AppBar>
+            </AppBar> */}
             <main>
                 {/* Hero unit */}
                 <div className={classes.heroContent}>
                     <Container maxWidth="sm">
                         <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-                            Album layout
+                            My Portfolio
             </Typography>
                         <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                            Something short and leading about the collection below—its contents, the creator, etc.
-                            Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-                            entirely.
+                            I am continually learning and improving my coding skills. If you see something you'd like to comment on or discuss, please contact me!
             </Typography>
                         <div className={classes.heroButtons}>
                             <Grid container spacing={2} justify="center">
                                 <Grid item>
-                                    <Button variant="contained" color="primary">
-                                        Main call to action
-                  </Button>
-                                </Grid>
-                                <Grid item>
-                                    <Button variant="outlined" color="primary">
-                                        Secondary action
+                                    <Button variant="contained" color="outlined" href={'/'}>
+                                        Contact
                   </Button>
                                 </Grid>
                             </Grid>
@@ -139,10 +132,10 @@ export default function Album() {
             {/* Footer */}
             <footer className={classes.footer}>
                 <Typography variant="h6" align="center" gutterBottom>
-                    Footer
+                    Site continues to be updated with additional content
         </Typography>
                 <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-                    Something here to give the footer a purpose!
+                    Thanks for stopping by!
         </Typography>
                 <Copyright />
             </footer>
