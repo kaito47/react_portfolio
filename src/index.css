@@ -16,3 +16,8 @@ ul {
 #buttons {
   margin-left: 50%;
 }
+
+#MuiTypography-root {
+  font-weight: bold;
+  font-size: 2em;
+}

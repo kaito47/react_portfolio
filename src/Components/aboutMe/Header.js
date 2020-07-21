@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
     toolbarSecondary: {
         justifyContent: 'space-between',
         overflowX: 'auto',
+
     },
     toolbarLink: {
         padding: theme.spacing(1),
@@ -43,15 +44,18 @@ export default function Header(props) {
                 >
                 </Typography>
             </Toolbar> */}
-            <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>
+            <Toolbar component="h2" variant="h2" className={classes.toolbarSecondary}>
                 {sections.map((section) => (
                     <Link
-                        color="inherit"
+                        color="secondary"
+                        // fontWeight="bold"
                         noWrap
                         key={section.title}
                         variant="body2"
                         href={section.url}
+                        target="_blank"
                         className={classes.toolbarLink}
+
                     >
                         {section.title}
                     </Link>

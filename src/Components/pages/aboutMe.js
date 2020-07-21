@@ -81,7 +81,10 @@ export default function Blog() {
                                 Click for Resume
                         </Button>
                         </div> */}
-                        Email: oshaughnessykm@gmail.com
+                        <Grid item xs={12}>
+                            <h4>Email me at: oshaughnessykm@gmail.com</h4>
+                        </Grid>
+
                     </Grid>
                 </main>
             </Container >
