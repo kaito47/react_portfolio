@@ -130,7 +130,7 @@ export default function CenteredGrid() {
                         <div className={classes.heroButtons}>
                             <Grid container spacing={2} justify="center">
                                 <Grid item>
-                                    <Button variant="contained" color="outlined" href={'/'}>
+                                    <Button variant="contained" color="secondary" href={'/'}>
                                         Contact
                   </Button>
                                 </Grid>
