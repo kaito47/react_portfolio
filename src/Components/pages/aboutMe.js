@@ -23,7 +23,11 @@ const useStyles = makeStyles((theme) => ({
 
 const sections = [
     { title: 'Portfolio', url: '/portfolio' },
+    { title: 'Github', url: 'https://github.com/kaito47' },
+    { title: 'LinkedIn', url: 'https://www.linkedin.com/in/kait-o-shaughnessy-b9b3871a6/' },
+    { title: 'Resume', url: '../../../2020CV.pdf' }
 ];
+
 
 const mainFeaturedPost = {
     title: "Hi, I'm Kait",
@@ -51,12 +55,6 @@ const featuredPosts = [
     },
 ];
 
-// const social = [
-//     { name: 'GitHub', icon: GitHubIcon },
-//     { name: 'Twitter', icon: TwitterIcon },
-// ];
-
-
 export default function Blog() {
     const classes = useStyles();
 
@@ -71,7 +69,7 @@ export default function Blog() {
                         {featuredPosts.map((post) => (
                             <FeaturedPost key={post.title} post={post} />
                         ))}
-                        <div className="buttons">
+                        {/* <div className="buttons">
                             <Button variant="contained" color="secondary" href="https://github.com/kaito47" target="_blank" justify="center">
                                 Click for Github
 </Button>
@@ -82,7 +80,8 @@ export default function Blog() {
                             <Button variant="contained" color="primary" href="../../public/2020CV.pdf" target="_blank">
                                 Click for Resume
                         </Button>
-                        </div>
+                        </div> */}
+                        Email: oshaughnessykm@gmail.com
                     </Grid>
                 </main>
             </Container >
